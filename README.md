@@ -1,10 +1,18 @@
 # tds-proj1
-For a selected city, perform analytics on it's Github users and repositories 
 
-Methodology for collecting the data:  
-1. The first thought was to use the Github users api. As part of my workflow, I did a trial run (using just plain browser GET request with Pretty Print option turned on in Chrome) to just get a feel of the data. In my case for the city of Chennai, I realized there are 423 users with a follower count greater than 50.  
-2. However, I realized that just the users api will not get me the data required in the project. We need to go one level deep, so to speak, to retreieve the user details (data such as their email id, location, repositories they are following etc.). In order to do so, one would need to make the first api call (which in my case shows there are 423 users meeting the criteria in the city of Chennai), followed by individual api calls for each of the individual users (which makes it 423 additional calls - assuming there are no server side issues where I need to rerun the scraping program).
-3. I read up the Github api limits and there is a cap of 60 requests/hour. So some back of the envelop calculation shows that it will take more than 4 hours to retrieve the user data alone (fetch first 60 user details, wait for another hour, rerun from where you left). That looked doable but very inefficient. I cross verified the Discourse forum and the course instructor has specifically mentioned that the project parameters (the user count) does make it possible to retrieve all information within 60 requests.
-4. GraphQL as the solution. I explored GraphQL and the fact that Github does provide GraphQL style access to the users data.
-5. Prior to coding the scraping program in Python, I wanted to get some experience on the GraphQL queries in the context of this project (finetune the query on a limited set of data (I restricted the outputs to just 10 records to check the query, the node structures etc. - the Github Explorer fortunately has intellisense and that helps a lot in getting the field names right), so to speak - similar to using a SQL tool for databases). I used the Github provided tool "Github GraphQL Explorer" for that. Please note that this need that you've a personal access token (PAT). Once the GraphQL query is tested (on a very limited set of outputs), I transferred the query over to the Python program.
-6. Ready for testing (first iteration): Realized that query ran fine, but while printing the results onto the console, the execution stopped halfway. 
+**Objective:** Perform analytics on GitHub users and repositories for a selected city.
+
+## Methodology for Collecting Data
+
+1. Initially, I considered using the GitHub Users API. To familiarize myself with the data, I conducted a trial run by making a simple GET request in my browser (using Chrome's Pretty Print option). For the city of Chennai, I discovered there are **423 users** with a follower count greater than **50**.
+  
+2. However, I realized that the Users API alone would not provide all the necessary data for this project. To retrieve details such as email addresses, locations, and the repositories users are following, I would need to make an initial API call to obtain the list of users (in this case, **423 users**), followed by individual API calls for each user. This would result in an additional **423 calls**, assuming no server-side issues arise that would require re-running the scraping program.
+
+3. After reviewing the GitHub API rate limits, I found that there is a cap of **60 requests per hour**. My calculations indicated that retrieving user data alone would take more than **4 hours** (fetching the first **60 user details**, waiting for another hour, and then resuming from where I left off). While this approach was feasible, it was highly inefficient. I verified on the Discourse forum that the project parameters (specifically the user count) indeed allow for all information to be retrieved within **60 requests**.
+
+4. **Exploring GraphQL as a Solution:** I investigated GraphQL, which GitHub provides for more efficient access to user data.
+
+5. Before coding the scraping program in Python, I aimed to gain experience with GraphQL queries in the context of this project. I fine-tuned my queries on a limited dataset (restricting the output to **10 records** to verify the query structure and node relationships). The GitHub GraphQL Explorer's IntelliSense feature was particularly helpful in ensuring I used the correct field names. It’s important to note that a personal access token (PAT) is required for this tool. Once I validated the GraphQL query with limited output, I transferred it into the Python program.
+
+6. **Testing the First Iteration:** I realized that while the query executed successfully, the program stopped halfway through printing the results to the console.
+
