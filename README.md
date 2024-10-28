@@ -1,2 +1,8 @@
 # tds-proj1
 For a selected city, perform analytics on it's Github users and repositories 
+
+Methodology for collecting the data:  
+1. The first thought was to use the Github users api. As part of my workflow, I did a trial run (using just plain browser GET request with Pretty Print option turned on in Chrome) to just get a feel of the data. In my case for the city of Chennai, I realized there are 423 users with a follower count greater than 50.  
+2. However, I realized that just the users api will not get me the data required in the project. We need to go one level deep, so to speak, to retreieve the user details (data such as their email id, location, repositories they are following etc.). In order to do so, one would need to make the first api call (which in my case shows there are 423 users meeting the criteria in the city of Chennai), followed by individual api calls for each of the individual users (which makes it 423 additional calls - assuming there are no server side issues where I need to rerun the scraping program).
+3. I read up the Github api limits and there is a cap of 60 requests/hour. So some back of the envelop calculation shows that it will take more than 4 hours to retrieve the user data alone (fetch first 60 user details, wait for another hour, rerun from where you left). That looked doable but very inefficient. I cross verified the Discourse forum and the course instructor has specifically mentioned that the project parameters (the user count) does make it possible to retrieve all information within 60 requests.
+4. GraphQL as the solution. I explored GraphQL and the fact that Github does provide GraphQL style access to the users data.  
