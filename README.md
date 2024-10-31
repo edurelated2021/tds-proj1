@@ -1,8 +1,10 @@
-# tds-proj1
+# Tools in Data Science Project 1
+Student id: 24ds3000100
 
-**Objective:** Perform analytics on GitHub users and repositories for a selected city.
+## Project objective:
+For a given city, scrape Github user details (and certain details of their code repositories). Perform analytics on the retrieved data to find interesting observations and patterns with an aim to frame actionable recommendations.
 
-## Methodology for Collecting Data
+## Methodology for scraping the data
 
 1. Initially, I considered using the GitHub Users API. To familiarize myself with the data, I conducted a trial run by making a simple GET request in my browser (using Chrome's Pretty Print option). For the city of Chennai, I discovered there are **423 users** with a follower count greater than **50**.
   
@@ -15,4 +17,9 @@
 5. Before coding the scraping program in Python, I aimed to gain experience with GraphQL queries in the context of this project. I fine-tuned my queries on a limited dataset (restricting the output to **10 records** to verify the query structure and node relationships). The GitHub GraphQL Explorer's IntelliSense feature was particularly helpful in ensuring I used the correct field names. It’s important to note that a personal access token (PAT) is required for this tool. Once I validated the GraphQL query with limited output, I transferred it into the Python program.
 
 6. **Testing the First Iteration:** I realized that while the query executed successfully, the program stopped halfway through printing the results to the console.
+
+## Interesting and surprising facts I found after analyzing the data
+
+
+## Actionable recommendation for developers based on data analysis
 
