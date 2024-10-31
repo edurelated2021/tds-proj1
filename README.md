@@ -1,4 +1,4 @@
-# Tools in Data Science Project 1 (Perform analysis on Github users and repositories)
+# Tools in Data Science Project 1
 
 ## Project objective:
 For the city of Chennai, India scrape details of popular Github committers and their code repositories. Perform analytics on the retrieved data to find interesting insights and patterns with an aim to frame actionable recommendations. 
