@@ -26,6 +26,8 @@ For a given city, scrape Github user details (and certain metadata associated wi
 8. Ran the program in Google Colab environment and generated the users.csv and repositories.csv files to perform further analysis on.
 
 ## Interesting and surprising facts I found after analyzing the data
+1. There is a significant spike in number of users who registered on Github on the year of the covid e.g. 2020
+   ![2020 spike!](/images/numberOfUsersByYear.jpg)
 
 
 ## Actionable recommendation for developers based on data analysis
