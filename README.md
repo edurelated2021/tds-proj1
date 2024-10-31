@@ -2,18 +2,18 @@
 Student id: 24ds3000100
 
 ## Project objective:
-For a given city, scrape details of popular Github committers and their code repositories. Perform analytics on the retrieved data to find interesting insgights and patterns with an aim to frame actionable recommendations.
+For a given city, scrape details of popular Github committers and their code repositories. Perform analytics on the retrieved data to find interesting insights and patterns with an aim to frame actionable recommendations.
 
 ## Methodology for scraping the data
 **In summary:**
-1. Explored both the Github REST api (classic variant) as well the GraphQL variant. Decided to use the GraphQL variant because that would be efficient in terms of the reducing the number of calls required significantly.  In fact, using the GraphQL variant, the entire users details data (with the required filters) can be retrieved within a minute.
+1. Explored both the Github REST api (classic variant) as well the GraphQL variant. Decided to use the GraphQL variant because that would be efficient in terms of the reducing the number of calls required significantly.  In fact, using the GraphQL variant, the entire user details data (with the required filters) can be retrieved within a minute.
 2. Performed a few basic data transformations (such as removal of special characters, converting nulls to spaces etc.) from the incoming data.
 3. Saved the two csv files and performed analysis on them.
 
 **Softwares/tools used:**
 1. Initial data exploration: Chrome browser (with pretty print turned on)
 2. Environment/Program: Python (Google Colab notebook) and associated Python libraries
-3. Additional tools: [Github GraphQL Explorer](https://docs.github.com/en/graphql/overview/explorer) [for performing tests with a restricted input size and then debugging the GraphQL queries], Notepad++, Libre Office
+3. Additional tools: [Github GraphQL Explorer](https://docs.github.com/en/graphql/overview/explorer) [for performing tests with a restricted input size and then debugging the GraphQL queries], Notepad++, Libre Office, Google Sheets, ChatGPT 4o mini 
 
 **Details:**
 1. Initially, I considered using the classic variant of the GitHub Users API. To order to become familiar with the fields, I did a few trial runs by invoking the endpoints directly on my web browser (with Chrome's Pretty Print option turned on for easy readability). For the city of Chennai, found there are **423 users** with a follower count greater than **50**.  
@@ -26,8 +26,9 @@ For a given city, scrape details of popular Github committers and their code rep
 8. Ran the program in Google Colab environment and generated the users.csv and repositories.csv files to perform further analysis on.
 
 ## Interesting and surprising facts I found after analyzing the data
-1. There is a significant spike in number of users who registered on Github on the year of the covid e.g. 2020
+1. There is a significant spike in the number of users who registered on Github on the year of the covid e.g. 2020
    ![2020 spike!](/images/numberOfUsersByYear.jpg)
+   This spike in the number of new GitHub users in 2020 was largely driven by the COVID-19 pandemic, which shifted many to remote work and increased the need for digital collaboration tools. As people sought to learn new skills while at home, interest in programming and open-source software grew, leading to more individuals creating GitHub accounts. The rise of online coding courses and bootcamps also contributed to this trend, as learners needed platforms to share their work. Additionally, many organizations accelerated their digital transformation efforts, further boosting the use of GitHub for project collaboration.
 
 
 ## Actionable recommendation for developers based on data analysis
