@@ -2,7 +2,7 @@
 Student id: 24ds3000100
 
 ## Project objective:
-For a given city, scrape Github user details (and certain metadata associated with their code repositories). Perform analytics on the retrieved data to find interesting observations and patterns with an aim to frame actionable recommendations.
+For a given city, scrape details of popular Github committers and their code repositories. Perform analytics on the retrieved data to find interesting insgights and patterns with an aim to frame actionable recommendations.
 
 ## Methodology for scraping the data
 **In summary:**
