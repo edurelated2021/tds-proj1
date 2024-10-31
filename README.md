@@ -27,8 +27,12 @@ For a given city, scrape details of popular Github committers and their code rep
 
 ## Interesting and surprising facts I found after analyzing the data
 1. There is a significant spike in the number of users who registered on Github on the year of the covid e.g. 2020
-   ![2020 spike!](/images/numberOfUsersByYear.jpg)
-   This spike in the number of new GitHub users in 2020 was largely driven by the COVID-19 pandemic, which shifted many to remote work and increased the need for digital collaboration tools. As people sought to learn new skills while at home, interest in programming and open-source software grew, leading to more individuals creating GitHub accounts. The rise of online coding courses and bootcamps also contributed to this trend, as learners needed platforms to share their work. Additionally, many organizations accelerated their digital transformation efforts, further boosting the use of GitHub for project collaboration.
+   ![2020 spike!](/images/numberOfUsersByYear.jpg)  
+   This spike in the number of new GitHub users in 2020 was largely driven by the COVID-19 pandemic, which shifted many to work remotely and increased the need for digital collaboration tools. As people sought to learn new skills while at home, interest in programming and open-source software grew, leading to more individuals creating GitHub accounts. The rise of online coding courses and bootcamps also contributed to this trend, as learners needed platforms to share their work. Additionally, many organizations accelerated their digital transformation efforts, further boosting the use of GitHub for project collaboration.
+2. A textual analysis of the developer bios reveal a few interesting facets:
+   - **Human-Centric Values**: Many developers express values related to creativity, problem-solving, and making a positive impact through technology. Phrases about passion, love for coding, and community engagement highlight a human-centric approach to technology.
+   - **Soft Skills**: There’s a notable emphasis on communication, mentorship, and collaboration, essential skills in today’s tech environment, indicating that technical expertise is complemented by strong interpersonal abilities.
+   - **Hackathons and Competitions**: Many participants have engaged in hackathons, suggesting a vibrant culture of innovation and competition that drives developers to refine their skills and showcase their work.
 
 
 ## Actionable recommendation for developers based on data analysis
