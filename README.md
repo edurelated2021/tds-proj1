@@ -30,3 +30,7 @@ For a given city, scrape Github user details (and certain metadata associated wi
 
 ## Actionable recommendation for developers based on data analysis
 
+
+## Notes to myself (beyond the scope and requirements for this project)
+1. Does the most popular languages depend on the geographies? Perhaps it does. For example, consider the prevelance of Kotlin in East European nations). A geographical visualization using a tool such as Tableau (say, using a world map and plotting the most prevelant programming language in prominent cities) can be a good narrative. This will require a scan of Github metadata across several cities.
+
