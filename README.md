@@ -53,7 +53,7 @@ Point 3 in the findings (please refer above) indicate that there is a significan
 - **Collaborate on Open Source**: Join open source projects and collaborate with other developers to enhance visibility and credibility.
 - **Write Tutorials and Blogs**: Share your knowledge through articles or tutorials that showcase your projects or concepts, linking back to your GitHub profile/repositories.
 - **Optimize Your Profile**: Ensure your GitHub profile is complete and showcases your best work, making it easier for users to follow you.
-2. Focus on current trends/upskill yourself with the current state of the art
+2. Focus on current trends/upskill yourself with the current state of the art:  
   Data analysis indicates strong prevelance of frontend technologies (Javascript) and also a growing usage of Python (primarily in the domain of machine learning) as two of the most popular languages. Developers should upskill themselves on these technologies in keeping up with the trend and needs of the industry. 
 
 ## Notes to myself (beyond the scope and requirements for this project)
