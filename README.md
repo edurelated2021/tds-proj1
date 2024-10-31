@@ -33,11 +33,11 @@ For a given city, scrape details of popular Github committers and their code rep
 2. There is a significant spike in the number of users who registered on Github in the year of the covid e.g. 2020
    ![2020 spike!](/images/numberOfUsersByYear.jpg)  
    This spike in the number of new GitHub users in 2020 was largely driven by the COVID-19 pandemic, which shifted many to work remotely and increased the need for digital collaboration tools. As people sought to learn new skills while at home, interest in programming and open-source software grew, leading to more individuals creating GitHub accounts. The rise of _online_ coding courses and bootcamps also contributed to this trend, as learners needed platforms to share their work. Additionally, many organizations accelerated their digital transformation efforts, further boosting the use of GitHub for project collaboration.
-3. **Dispels some popular myths/misconceptions/assumptions/preconceived notions:**  
-   **Myth**: _That having a high number of repositories and/or longer bio will attract more followers._
-   **Fact**: In fact a significant number of the popular github users (measured in terms of number of followers) had a respositories count in double digits/shorter bios. In other words, users follow to indicate their appreciation towards quality and usefulness of the projects.
-   **Myth**: The more the watchers for a given code repository, the more the stargazers (people who find the code repository useful)
-   **Fact**: The correlation is rather weak indicating that github users star a given repository as a way to show appreciation or bookmark a project for future reference (without neccessarily becoming followers of the project)
+3. **Dispels some popular myths/misconceptions/assumptions/preconceived notions:**    
+   **Myth**: _That having a high number of repositories and/or longer bio will attract more followers._  
+   **Fact**: In fact a significant number of the popular github users (measured in terms of number of followers) had a respositories count in double digits/shorter bios. In other words, users follow to indicate their appreciation towards quality and usefulness of the projects.  
+   **Myth**: _The more the watchers for a given code repository, the more the number of stargazers (people who find the code repository useful). _ 
+   **Fact**: The correlation is rather weak indicating that github users star a given repository as a way to show appreciation or bookmark a project for future reference (without _neccessarily_ becoming followers of the project).  
    
 
 
