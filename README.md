@@ -46,15 +46,17 @@ JavaScript's popularity stems from its versatility, being essential for web deve
 
 
 ## Actionable recommendation for developers based on data analysis
-1. Developers should focus on the quality of their outputs
-
-- **Engage with the Community**: Participate in discussions, comment on issues, and contribute to other repositories to build connections.
+Point 3 in the findings (please refer above) indicate that there is a significant weightage given to quality over quantity and more is not necessarily better. Quality and utility of the work product, in turn directly impacts the visibility and usr engagement. 
+1. Developers should focus on the quality of their outputs. Following are a few suggestions:
 - **Create Quality Projects**: Focus on well-documented, useful projects that solve real problems to attract interest.
-- **Consistent Updates**: Regularly update your projects with new features, bug fixes, or improvements to keep followers engaged.
+- **Maintain high code quality**: Code reviews, automated code linting, following secured coding standards, creating unit tests are some of the recommendations to ensure high quality of the code  
+- **Engage with the Community**: Participate in discussions, comment on issues, and contribute to other repositories to build connections.
+- **Consistent Updates**: Regularly update projects with new features, bug fixes, or improvements to keep followers engaged.
 - **Collaborate on Open Source**: Join open source projects and collaborate with other developers to enhance visibility and credibility.
-- **Write Tutorials and Blogs**: Share your knowledge through articles or tutorials that showcase your projects or concepts, linking back to your GitHub.
+- **Write Tutorials and Blogs**: Share your knowledge through articles or tutorials that showcase your projects or concepts, linking back to your GitHub profile/repositories.
 - **Optimize Your Profile**: Ensure your GitHub profile is complete and showcases your best work, making it easier for users to follow you.
-
+2. Focus on current trends/upskill yourself with the current state of the art
+  Data analysis indicated strong prevelance of frontend technologies (Javascript) and also a growing usage of Python (primarily in the domain of machine learning) as two of the most popular languages. Developers should upskill themselves on these technologies in keeping up with the trend and needs of the industry. 
 
 ## Notes to myself (beyond the scope and requirements for this project)
 1. Does the most popular languages depend on the geographies? Perhaps it does. For example, consider the prevelance of Kotlin in East European nations. A geographical visualization using a tool such as Tableau (say, using a world map and plotting the most prevalant programming language in prominent cities worldwide) can be a good and useful visualization. This will require a scan of Github metadata across several cities.
