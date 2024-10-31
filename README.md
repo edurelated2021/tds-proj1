@@ -49,4 +49,5 @@ JavaScript's popularity stems from its versatility, being essential for web deve
 
 ## Notes to myself (beyond the scope and requirements for this project)
 1. Does the most popular languages depend on the geographies? Perhaps it does. For example, consider the prevelance of Kotlin in East European nations. A geographical visualization using a tool such as Tableau (say, using a world map and plotting the most prevalant programming language in prominent cities worldwide) can be a good and useful visualization. This will require a scan of Github metadata across several cities.
+2. Explore this question: Do developers who are working in the field of machine learning also necessarily learning Javascript related technologies? What is the correlation? A cross geography scan will be ideal because trends may emerge in Silicon Valley and gradually be noticeable in other geographies with the passage of time.
 
