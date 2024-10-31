@@ -13,7 +13,7 @@ For a given city, scrape Github user details (and certain metadata associated wi
 **Softwares/tools used:**
 1. Initial data exploration: Chrome browser (with pretty print turned on)
 2. Environment/Program: Python (Google Colab notebook) and associated Python libraries
-3. Additional tools: [Github GraphQL Explorer] {:target="_blank"} (https://docs.github.com/en/graphql/overview/explorer) [for performing tests with a restricted input size and then debugging the GraphQL queries], Notepad++, Libre Office
+3. Additional tools: [Github GraphQL Explorer] (https://docs.github.com/en/graphql/overview/explorer) [for performing tests with a restricted input size and then debugging the GraphQL queries], Notepad++, Libre Office
 
 **Details:**
 1. Initially, I considered using the classic variant of the GitHub Users API. To order to become familiar with the fields, I did a few trial runs by invoking the endpoints directly on my web browser (with Chrome's Pretty Print option turned on for easy readability). For the city of Chennai, found there are **423 users** with a follower count greater than **50**.  
