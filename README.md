@@ -37,7 +37,9 @@ For a given city, scrape details of popular Github committers and their code rep
    **Myth**: _That having a high number of repositories and/or longer bio will attract more followers._  
    **Fact**: In fact a significant number of the popular github users (measured in terms of number of followers) had a respositories count in double digits/shorter bios. In other words, users follow to indicate their appreciation towards quality and usefulness of the projects.  
    **Myth**: _The more the watchers for a given code repository, the more the number of stargazers (people who find the code repository useful)._   
-   **Fact**: The correlation is rather weak indicating that github users star a given repository as a way to show appreciation or bookmark a project for future reference (without _neccessarily_ becoming followers of the project).  
+   **Fact**: The correlation is rather weak indicating that github users star a given repository as a way to show appreciation or bookmark a project for future reference (without _neccessarily_ becoming followers of the project).
+4. **JavaScript** is the most popular language.
+JavaScript's popularity stems from its versatility, being essential for web development and enabling interactive features on websites. The rise of frameworks and libraries like React, Angular, and Vue.js has further enhanced its capabilities and ease of use. Additionally, the growth of Node.js has allowed JavaScript to be used for _server-side_ development, enabling full-stack applications with a single language. Its large community and extensive resources also contribute to its widespread adoption.
    
 
 
