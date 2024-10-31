@@ -2,7 +2,8 @@
 Student id: 24ds3000100
 
 ## Project objective:
-For a given city, scrape details of popular Github committers and their code repositories. Perform analytics on the retrieved data to find interesting insights and patterns with an aim to frame actionable recommendations.
+For a given city, scrape details of popular Github committers and their code repositories. Perform analytics on the retrieved data to find interesting insights and patterns with an aim to frame actionable recommendations. 
+City chosen for analysis: Chennai, India  
 
 ## Methodology for scraping the data
 **In summary:**
@@ -26,7 +27,7 @@ For a given city, scrape details of popular Github committers and their code rep
 8. Ran the program in Google Colab environment and generated the users.csv and repositories.csv files to perform further analysis on.
 
 ## Interesting and surprising facts I found after analyzing the data
-1. A _textual analysis_ of the developer bios reveal a few interesting facets:
+1. A _textual analysis_ of the developer bios in Chennai reveal a few interesting facets:
    - **Human-Centric Values**: Many developers express values related to creativity, problem-solving, and making a positive impact through technology. Phrases about passion, love for coding, and community engagement highlight a human-centric approach to technology.
    - **Soft Skills**: There is a notable emphasis on communication, mentorship, and collaboration, essential skills in today’s tech environment, indicating that technical expertise is complemented by strong interpersonal abilities.
    - **Hackathons and Competitions**: Many developers have engaged in hackathons, suggesting a vibrant culture of innovation and competition that drives developers to refine their skills and showcase their work.
@@ -45,6 +46,14 @@ JavaScript's popularity stems from its versatility, being essential for web deve
 
 
 ## Actionable recommendation for developers based on data analysis
+1. Developers should focus on the quality of their outputs
+
+- **Engage with the Community**: Participate in discussions, comment on issues, and contribute to other repositories to build connections.
+- **Create Quality Projects**: Focus on well-documented, useful projects that solve real problems to attract interest.
+- **Consistent Updates**: Regularly update your projects with new features, bug fixes, or improvements to keep followers engaged.
+- **Collaborate on Open Source**: Join open source projects and collaborate with other developers to enhance visibility and credibility.
+- **Write Tutorials and Blogs**: Share your knowledge through articles or tutorials that showcase your projects or concepts, linking back to your GitHub.
+- **Optimize Your Profile**: Ensure your GitHub profile is complete and showcases your best work, making it easier for users to follow you.
 
 
 ## Notes to myself (beyond the scope and requirements for this project)
