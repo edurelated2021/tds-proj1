@@ -36,7 +36,7 @@ For a given city, scrape details of popular Github committers and their code rep
 3. **Dispels some popular myths/misconceptions/assumptions/preconceived notions:**    
    **Myth**: _That having a high number of repositories and/or longer bio will attract more followers._  
    **Fact**: In fact a significant number of the popular github users (measured in terms of number of followers) had a respositories count in double digits/shorter bios. In other words, users follow to indicate their appreciation towards quality and usefulness of the projects.  
-   **Myth**: _The more the watchers for a given code repository, the more the number of stargazers (people who find the code repository useful). _ 
+   **Myth**: _The more the watchers for a given code repository, the more the number of stargazers (people who find the code repository useful)._   
    **Fact**: The correlation is rather weak indicating that github users star a given repository as a way to show appreciation or bookmark a project for future reference (without _neccessarily_ becoming followers of the project).  
    
 
