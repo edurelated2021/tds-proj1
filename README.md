@@ -2,21 +2,28 @@
 Student id: 24ds3000100
 
 ## Project objective:
-For a given city, scrape Github user details (and certain details of their code repositories). Perform analytics on the retrieved data to find interesting observations and patterns with an aim to frame actionable recommendations.
+For a given city, scrape Github user details (and certain metadata associated with their code repositories). Perform analytics on the retrieved data to find interesting observations and patterns with an aim to frame actionable recommendations.
 
 ## Methodology for scraping the data
+**In summary:**
+1. Explored both the Github REST api (classic variant) as well the GraphQL variant. Decided to use the GraphQL variant because that would be efficient in terms of the reducing the number of calls required significantly.  In fact, using the GraphQL variant, the entire users details data (with the required filters) can be retrieved within a minute.
+2. Performed a few basic data transformations (such as removal of special characters, converting nulls to spaces etc.) from the incoming data
+3. Saved the two csv files and performed analysis on them
 
-1. Initially, I considered using the GitHub Users API. To familiarize myself with the data, I conducted a trial run by making a simple GET request in my browser (using Chrome's Pretty Print option). For the city of Chennai, I discovered there are **423 users** with a follower count greater than **50**.
-  
-2. However, I realized that the Users API alone would not provide all the necessary data for this project. To retrieve details such as email addresses, locations, and the repositories users are following, I would need to make an initial API call to obtain the list of users (in this case, **423 users**), followed by individual API calls for each user. This would result in an additional **423 calls**, assuming no server-side issues arise that would require re-running the scraping program.
+**Softwares/tools used:**
+1. Initial data exploration: Chrome browser (with pretty print turned on)
+2. Environment/Program: Python (Google Collab notebook) and associated Python libraries
+3. Additional tnools: [Github GraphQL Explorer](https://docs.github.com/en/graphql/overview/explorer) (for performing tests with a restricted input size and then debugging the GraphQL queries), Notepad++, Libre Office
 
-3. After reviewing the GitHub API rate limits, I found that there is a cap of **60 requests per hour**. My calculations indicated that retrieving user data alone would take more than **4 hours** (fetching the first **60 user details**, waiting for another hour, and then resuming from where I left off). While this approach was feasible, it was highly inefficient. I verified on the Discourse forum that the project parameters (specifically the user count) indeed allow for all information to be retrieved within **60 requests**.
-
-4. **Exploring GraphQL as a Solution:** I investigated GraphQL, which GitHub provides for more efficient access to user data.
-
-5. Before coding the scraping program in Python, I aimed to gain experience with GraphQL queries in the context of this project. I fine-tuned my queries on a limited dataset (restricting the output to **10 records** to verify the query structure and node relationships). The GitHub GraphQL Explorer's IntelliSense feature was particularly helpful in ensuring I used the correct field names. It’s important to note that a personal access token (PAT) is required for this tool. Once I validated the GraphQL query with limited output, I transferred it into the Python program.
-
-6. **Testing the First Iteration:** I realized that while the query executed successfully, the program stopped halfway through printing the results to the console.
+**Details:**
+1. Initially, I considered using the classic variant of the GitHub Users API. To familiarize myself with the fields, I did a few trial runs by invoking the endpoints directly on my web browser (with Chrome's Pretty Print option turned on for easy readability). For the city of Chennai, I found there are **423 users** with a follower count greater than **50**.  
+2. However, I realized that the Users API alone will not provide all the necessary user details as specified for this project. To retrieve additional details such as email address, locations, the number of repositories users are following, I would need to, first, make an initial API call to obtain the list of users (for the city of **Chennai** there are **423 users**), followed by API calls to fetch additional data associated with each individual user (one api call per user). This would result in an additional **423 calls**, assuming no server-side issues arise during execution that would otherwise require re-running the scraping program.
+3. Explored GraphQL as an alternate solution over the classic REST variant. Unlike the classic variant where one need to invoke an initial service to retrieve the list of users and then iterate over the list of users and fire one REST call per user to fetch the user details, the GraphQL variant allows to 'merge' these separate invocations into a single GraphQL construct. The efficiencies gained on the User Details fetch is significant as my tests showed the entire set of user details were retrieved and the users.csv call being created well under a minute.
+4. With regards to the repositories details, invoked another GraphQL query (one per user) and created the repositories.csv file.
+5. Created a Personal Access Token (PAT) and used that in the authorization headers while invoking the GraphQLs. A PAT not only allows more invocations per hour, but also allows some fields (such as emails) be retrieved which otherwise will be scrubbed in the unauthenticated calls.
+6. Before coding the scraping program in Python, I debugged and adjusted the GraphQL queries using the GitHub GraphQL Explorer (a personal access token is required) on a limited dataset (limiting the resultset size to 10 records to verify the query structure and node relationships). The GitHub GraphQL Explorer's IntelliSense feature was helpful in zeroing in the correct field names. Once I validated the GraphQL queries, I transferred them over to the Python program.
+7. Used a few basic data transformations (special characters removal, converting nulls to spaces etc. per the project description) from the incoming data.
+8. Ran the program in Google program environment and generated the users.csv and repositories.csv files to perform further analysis on.
 
 ## Interesting and surprising facts I found after analyzing the data
 
