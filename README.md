@@ -6,8 +6,8 @@ For a given city, scrape details of popular Github committers and their code rep
 
 ## Methodology for scraping the data
 **In summary:**
-1. Explored both the Github REST api (classic variant) as well the GraphQL variant. Decided to use the GraphQL variant because that would be efficient in terms of the reducing the number of calls required significantly.  In fact, using the GraphQL variant, the entire user details data (with the required filters) can be retrieved within a minute.
-2. Performed a few basic data transformations (such as removal of special characters, converting nulls to spaces etc.) from the incoming data.
+1. Explored both the Github REST api (classic variant) as well the GraphQL variant. Decided to use the GraphQL variant because that would be efficient in terms of reducing the number of calls required significantly (this is particularly important when we scale out).  In fact, using the GraphQL variant, the entire user details data (with the required filters) can be retrieved within a minute.
+2. Performed a few basic data transformations (such as removal of special characters, converting nulls to spaces etc.) on the incoming data.
 3. Saved the two csv files and performed analysis on them.
 
 **Softwares/tools used:**
@@ -26,13 +26,18 @@ For a given city, scrape details of popular Github committers and their code rep
 8. Ran the program in Google Colab environment and generated the users.csv and repositories.csv files to perform further analysis on.
 
 ## Interesting and surprising facts I found after analyzing the data
-1. There is a significant spike in the number of users who registered on Github on the year of the covid e.g. 2020
-   ![2020 spike!](/images/numberOfUsersByYear.jpg)  
-   This spike in the number of new GitHub users in 2020 was largely driven by the COVID-19 pandemic, which shifted many to work remotely and increased the need for digital collaboration tools. As people sought to learn new skills while at home, interest in programming and open-source software grew, leading to more individuals creating GitHub accounts. The rise of online coding courses and bootcamps also contributed to this trend, as learners needed platforms to share their work. Additionally, many organizations accelerated their digital transformation efforts, further boosting the use of GitHub for project collaboration.
-2. A _textual analysis_ of the developer bios reveal a few interesting facets:
+1. A _textual analysis_ of the developer bios reveal a few interesting facets:
    - **Human-Centric Values**: Many developers express values related to creativity, problem-solving, and making a positive impact through technology. Phrases about passion, love for coding, and community engagement highlight a human-centric approach to technology.
-   - **Soft Skills**: There’s a notable emphasis on communication, mentorship, and collaboration, essential skills in today’s tech environment, indicating that technical expertise is complemented by strong interpersonal abilities.
-   - **Hackathons and Competitions**: Many participants have engaged in hackathons, suggesting a vibrant culture of innovation and competition that drives developers to refine their skills and showcase their work.
+   - **Soft Skills**: There is a notable emphasis on communication, mentorship, and collaboration, essential skills in today’s tech environment, indicating that technical expertise is complemented by strong interpersonal abilities.
+   - **Hackathons and Competitions**: Many developers have engaged in hackathons, suggesting a vibrant culture of innovation and competition that drives developers to refine their skills and showcase their work.
+2. There is a significant spike in the number of users who registered on Github in the year of the covid e.g. 2020
+   ![2020 spike!](/images/numberOfUsersByYear.jpg)  
+   This spike in the number of new GitHub users in 2020 was largely driven by the COVID-19 pandemic, which shifted many to work remotely and increased the need for digital collaboration tools. As people sought to learn new skills while at home, interest in programming and open-source software grew, leading to more individuals creating GitHub accounts. The rise of _online_ coding courses and bootcamps also contributed to this trend, as learners needed platforms to share their work. Additionally, many organizations accelerated their digital transformation efforts, further boosting the use of GitHub for project collaboration.
+3. **Bursts some popular myths/preconceived notions:**
+   **Myth**: That having a high number of repositories and/or longer bio will attract more followers.
+   **Fact**: In fact a significant number of the popular github users (measured in terms of number of followers) had a respositories count in double digits/shorter bios.
+   
+
 
 
 ## Actionable recommendation for developers based on data analysis
